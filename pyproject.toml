@@ -1,0 +1,14 @@
+[project]
+name = "tangle-deployment-gcp"
+version = "0.1.0"
+description = "Scripts for deploying Tangle on Google Cloud Platform"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cloud-pipelines-backend",
+    "google-auth>=2.45.0",
+    "google-cloud-storage>=3.7.0",
+]
+
+[tool.uv.sources]
+cloud-pipelines-backend = { git = "https://github.com/TangleML/tangle", rev = "dev" }
